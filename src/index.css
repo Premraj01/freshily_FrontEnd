@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/** @format */
+
+main {
+  min-height: 160vh;
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer {
+  min-height: 20vh;
+  background-color: #387c44;
+}
+
+header {
+  background-color: #387c44;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 360px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.carousel a {
+  margin: 0 auto;
+}
+
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  height: 150px;
+  width: 150px;
+  margin: 4px;
+  flex: 1 1 calc(20% - 8px); /* <-- adjusting for margin */
+}
+
+.cont {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cont:hover .image {
+  opacity: 0.3;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background: transparent;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
 }

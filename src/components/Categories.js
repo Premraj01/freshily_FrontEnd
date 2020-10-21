@@ -1,0 +1,28 @@
+/** @format */
+
+import React, { useState, useEffect } from 'react'
+//import Photos from '../components/Photos'
+import axios from 'axios'
+import { Button, Row, Col, Image, Figure, Container } from 'react-bootstrap'
+import Pagination from './Pagination'
+
+const Categories = ({ stories }) => {
+  return (
+    <Container
+      className='parent jumbotron-transparent mt-4 bg-transprent '
+      fluid>
+      {stories.map((story) => (
+        <Figure className='item' key={story.id}>
+          <Figure.Image
+            className='rounded'
+            style={{ height: 70, width: 70 }}
+            src={story.image}
+          />
+          <Figure.Caption>{story.name}</Figure.Caption>
+        </Figure>
+      ))}
+    </Container>
+  )
+}
+
+export default Categories
