@@ -6,17 +6,15 @@ import Story from '../components/Story'
 import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Row, Col, Container, Figure } from 'react-bootstrap'
-import stories from '../products'
+import Companies from '../Company'
 
 const StoriesScreen = () => {
-  console.log(stories)
-
   return (
     <Container>
       <Row>
-        {stories.map((story) => (
+        {Companies.map((company) => (
           <Col sm={12} md={6} lg={4} xl={6}>
-            <Story story={story} />
+            <Story company={company} />
           </Col>
         ))}
       </Row>

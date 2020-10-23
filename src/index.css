@@ -27,15 +27,15 @@ header {
   top: 0;
 }
 
-.carousel-caption h2 {
-  color: #fff;
+.carousel-caption h3 {
+  color: black;
 }
 
 .carousel img {
   height: 360px;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .carousel a {
   margin: 0 auto;

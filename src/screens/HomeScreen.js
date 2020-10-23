@@ -13,15 +13,17 @@ const HomeScreen = () => {
   return (
     <>
       <Option stories={stories} />
-      <main className='ml-auto'>
-        <Container>
-          <ProductCarousel stories={stories} />
-        </Container>
+      <>
+        <ProductCarousel stories={stories} />
+      </>
+      <>
+        {' '}
         <Categories stories={stories} />
-        <hr />
+      </>
 
-        <Pagination stories={stories} />
-      </main>
+      <hr />
+
+      <Pagination stories={stories} />
     </>
   )
 }

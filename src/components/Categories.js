@@ -8,20 +8,20 @@ import Pagination from './Pagination'
 
 const Categories = ({ stories }) => {
   return (
-    <Container
-      className='parent jumbotron-transparent mt-4 bg-transprent '
+    <div
+      className='parent jumbotron-transparent mt-5 ml-5 bg-transprent '
       fluid>
       {stories.map((story) => (
         <Figure className='item' key={story.id}>
           <Figure.Image
-            className='rounded'
-            style={{ height: 70, width: 70 }}
+            className='rounded ml-5%'
+            style={{ height: 80, width: 80 }}
             src={story.image}
           />
-          <Figure.Caption>{story.name}</Figure.Caption>
+          <Figure.Caption className=''>{story.name}</Figure.Caption>
         </Figure>
       ))}
-    </Container>
+    </div>
   )
 }
 

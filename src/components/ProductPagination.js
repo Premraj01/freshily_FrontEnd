@@ -21,25 +21,7 @@ const ProductPagination = ({ stories }) => {
   return (
     <div className='mb-5'>
       <div>
-        <h1 className=' text-primary mb-3 '>Our Products</h1>
-        <Product stories={stories} />
-        <Pagination
-          photosPerPage={photosPerPage}
-          totalPhotos={stories.length}
-          paginate={paginate}
-        />
-      </div>
-      <div className='mt-4'>
-        <h1 className=' text-primary mb-3 '>Our Products</h1>
-        <Product stories={stories} />
-        <Pagination
-          photosPerPage={photosPerPage}
-          totalPhotos={stories.length}
-          paginate={paginate}
-        />
-      </div>
-      <div>
-        <h1 className=' text-primary mb-3 '>Our Products</h1>
+        <h1 className=' text-primary mb-3 mt-1 '>Our Products</h1>
         <Product stories={stories} />
         <Pagination
           photosPerPage={photosPerPage}

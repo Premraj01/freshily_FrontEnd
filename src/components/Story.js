@@ -4,14 +4,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card, Image, Container } from 'react-bootstrap'
 
-const Story = ({ story }) => {
+const Story = ({ company }) => {
   return (
     <>
       <Container className='cont my-3 p-3 rounded'>
-        <a href={`/story/${story._id}`}>
-          <Card.Img className='image' src={story.image} variant='top' />
+        <a href={`/story/${company._id}`}>
+          <Card.Img className='image' src={company.image} variant='top' />
           <div className='middle'>
-            <div className='text'>{story.name}</div>
+            <div className='text'>{company.name}</div>
           </div>
         </a>
       </Container>
