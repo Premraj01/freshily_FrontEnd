@@ -78,10 +78,7 @@ const Header = () => {
 
               <Dropdown.Menu as={CustomMenu}>
                 {Locations.map((Location) => (
-                  <Dropdown.Item Key={Location._id}>
-                    <Image src={Location.logo} roundedCircle fluid />
-                    &nbsp;&nbsp; {Location.city}
-                  </Dropdown.Item>
+                  <Dropdown.Item Key={Location._id} data={Location.city} />
                 ))}
               </Dropdown.Menu>
             </Dropdown>
